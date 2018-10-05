@@ -1,0 +1,30 @@
+
+BROKER_URL = 'amqp://guest:guest@localhost:15672//'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+# Google Drive Storage Settings
+
+GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = os.path.join(
+    BASE_DIR, "../credentials", "gdstorage.json")
+GOOGLE_DRIVE_STORAGE_SERVICE_EMAIL = 'googledrivedjango@upeu-erp-177115.iam.gserviceaccount.com'
+GOOGLE_DRIVE_STORAGE_P12_KEY_FILE = os.path.join(
+    BASE_DIR, "../credentials", "P12PRUEBA.p12")
+
+# File Server
+DEFAULT_FILE_STORAGE = 'tools.storage.MinioStorage'
+
+MINIO_SERVER = 'erpfiles-dev.upeu'
+MINIO_ACCESSKEY = 'KLBABQI7X6S0REWU6WFK'
+MINIO_SECRET = 'VqBUFRqnUDBzQ9t5wKVIQl20Ka/AKIKk95yQtAI6'
+MINIO_BUCKET = 'media'
+MINIO_SECURE = False
+
+MEDIA_URL = 'http://erpresources-dev.upeu/media/'
+
+
+WEBSOCKET_SERVER = 'ws://erpsockets-dev.upeu/'
+
+WEB_SERVER = 'http://erpweb-dev.upeu'
+
