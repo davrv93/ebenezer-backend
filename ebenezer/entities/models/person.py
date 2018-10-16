@@ -2,7 +2,7 @@ from uuid import uuid4
 
 from django.db import models
 
-from .related_factor import RelatedFactor
+# from .related_factor import RelatedFactor
 
 sex_choices = (
     ('M', 'Masculino'),
@@ -21,6 +21,7 @@ class Person(models.Model):
 
     sex = models.CharField(
         blank=True, null=True,
+        max_length=1,
         choices=sex_choices
     )
 
