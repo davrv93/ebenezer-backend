@@ -5,7 +5,7 @@ django-filter==2.0.0
 django-jet==1.0.7
 django-js-asset==1.1.0
 django-mptt==0.9.1
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 idna==2.7
 numpy==1.15.2
 pytz==2018.5
